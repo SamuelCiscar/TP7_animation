@@ -1,0 +1,81 @@
+body {
+    background-color: lightgreen;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid red; */
+    position: relative;
+    margin: auto;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    position: absolute;
+}
+
+
+@keyframes animation1 {
+    0% {
+        transform: translateY(0px);
+    }
+   
+    50% {
+        transform: translateY(160px);
+        background-color: aqua;
+    }
+    100% {
+        transform: translateY(0px);
+        background-color: chartreuse;
+    }
+}
+.anim1 {
+    margin-left: 80px;
+    animation: animation1 2s infinite ;
+}
+
+@keyframes animation2 {
+ 
+    0% { background-color: brown;
+    }
+    100% {
+      margin-top: 0px;
+      margin-left: 160px;
+      background-color: rgb(220, 140, 21);
+    }
+  }
+
+.anim2 {
+    margin-top: 160px;
+    animation: animation2 2s infinite alternate;
+}
+
+@keyframes animation3 {
+0%{
+    }
+    33% {
+        margin-top: 0px;
+        margin-left: 160px;
+        background-color: rgb(166, 86, 133);
+    }
+    66%{
+       
+        margin-left: 0px;
+        margin-top: 160px;
+        background-color: rgb(27, 198, 135);
+    }
+    100%{
+
+margin-top: 160px;
+margin-left: 160px;
+background-color: rgb(138, 130, 130);
+    }
+}
+
+.anim3 {
+    animation: animation3 2s infinite alternate ;
+}
